@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: #efefef;
+}
+
+h1 {
+  font-family: 'Galada', cursive;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body > header,
+body > #menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menus > button {
+  margin: 0 10px;
+}
+
+.wine-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+img {
+  width: auto;
+  height: 340px;
+}
+
+.wine-name {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.winery {
+  margin-top: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.average {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.wine-card {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 420px;
+  height: auto;
+  padding: 1em;
+}
+@media (max-width: 575px) {
+  img {
+    width: auto;
+    height: 240px;
+  }
+
+  .wine-name {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .winery {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .location {
+    font-size: 12px;
+  }
+
+  .average {
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .wine-card {
+    width: 220px;
+    height: auto;
+  }
+}
+
+button {
+  padding: 0.7em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
