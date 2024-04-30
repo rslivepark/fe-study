@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위 바위 보 앱</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>가위 바위 보</h1>
+    <h2 class="winner">플레이어 우승!!</h2>
+    <div class="score-board">
+      <div class="user">
+        <h3>플레이어</h3>
+        <div class="score">0</div>
+      </div>
+      <div class="computer">
+        <h3>컴퓨터</h3>
+        <div class="score">0</div>
+      </div>
+    </div>
+
+    <h2>선택하기</h2>
+    <div>남은 횟수 : <span class="count">10</span></div>
+    <div class="select">
+      <button>
+        <img id="scissors" src="./img/scissors.png" alt="scissors" />
+      </button>
+      <button><img id="rock" src="./img/rock.png" alt="rock" /></button>
+      <button><img id="paper" src="./img/paper.png" alt="paper" /></button>
+    </div>
+    <h3 class="resetBtn">다시 시작하기</h3>
+  </body>
+</html>

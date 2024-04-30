@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+img {
+  height: 150px;
+  width: auto;
+  padding: 2em;
+}
+
+.score-board {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.user,
+.computer {
+  padding: 1em;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.winner {
+  color: #fff;
+}
+
+.resetBtn:hover {
+  cursor: pointer;
+}
