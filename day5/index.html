@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도서목록 앱</title>
+    <script src="app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>📚 도서목록</h1>
+
+    <section id="input-area" class="">
+      <form action="#">
+        <div id="title">
+          <h4>도서명 <i class="fa-solid fa-book-bookmark"></i></h4>
+          <div class="input">
+            <input
+              type="text"
+              name="book-title"
+              id="book-title"
+              class="form-control"
+              placeholder="책 제목을 입력하세요."
+              aria-label="book-title"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+
+        <div id="writer">
+          <h4>저자 <i class="fa-solid fa-user-pen"></i></h4>
+          <div class="input">
+            <input
+              type="text"
+              name="book-writer"
+              id="book-writer"
+              class="form-control"
+              placeholder="저자 이름을 입력하세요."
+              aria-label="book-writer"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+
+        <div class="btn-area">
+          <button type="button" class="submitBtn" id="submitBtn">
+            등록하기
+          </button>
+          <div class="toast-message">도서명과 저자를 모두 입력해주세요.</div>
+        </div>
+      </form>
+    </section>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>도서명</th>
+          <th>&nbsp;</th>
+          <th>저자</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+  --green: #58dd94;
+  --black: #242424;
+  --orange: #fd7e14;
+  --pink: #d63384;
+  --blue: #0d6efd;
+  --yello: #ffc107;
+  --light: #f8f9fa;
+  --dark: #dee2e6;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --red: #dc3545;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yello);
+  font-family: 'Roboto';
+}
+
+.quizCard {
+  width: 60%;
+  margin: 20px;
+  background-color: var(--light);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#quizTitle {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.answerList {
+  display: grid;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+span {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 16px;
+  width: 20rem;
+  margin: 5px 0;
+}
+span:hover {
+  background-color: var(--green);
+  color: var(--light);
+  cursor: pointer;
+}
+
+.buttonArea {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+button {
+  /* display: none; */
+  font-weight: 800;
+  background-color: var(--red);
+  color: var(--light);
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--dark);
+  color: var(--red);
+  cursor: pointer;
+}
+
+.fa-hat-wizard {
+  margin-top: 20px;
+  font-size: 60px;
+  color: var(--purple);
+}

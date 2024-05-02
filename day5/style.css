@@ -1,0 +1,126 @@
+:root {
+  --green: #58dd94;
+  --black: #242424;
+  --orange: #fd7e14;
+  --pink: #d63384;
+  --blue: #0d6efd;
+  --yello: #ffc107;
+  --light: #f8f9fa;
+  --dark: #dee2e6;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --red: #dc3545;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.deleteBtn {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.2em;
+}
+
+.submitBtn {
+  margin: 1vh 0;
+  height: 4vh;
+  width: 90vw;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#title,
+#writer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin-top: 1vh;
+}
+
+input {
+  width: 90vw;
+  height: 4vh;
+  margin-bottom: 2vh;
+}
+
+table {
+  margin-top: 5vh;
+  width: 80vw;
+}
+
+th {
+  height: 30px;
+  border-bottom: 1px solid var(--black);
+  padding: 5px;
+}
+th:nth-child(1) {
+  width: 400px;
+}
+
+th:nth-child(3) {
+  width: 200px;
+}
+
+th:nth-child(2),
+th:nth-child(4) {
+  border: 0;
+}
+
+tbody {
+  text-align: center;
+}
+
+.toast-message {
+  opacity: 0%;
+  background-color: var(--red);
+  color: var(--light);
+  width: 240px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.5s;
+  transform: translate(0, 0);
+  margin-top: 2vh;
+}
+
+.toast-message.active {
+  opacity: 100%;
+  height: 40px;
+}
+
+.btn-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fa-book-bookmark {
+  color: var(--pink);
+}
+.fa-user-pen {
+  color: var(--blue);
+}
