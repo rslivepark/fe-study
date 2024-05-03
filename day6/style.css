@@ -1,0 +1,188 @@
+:root {
+  --green: #58dd94;
+  --black: #242424;
+  --orange: #fd7e14;
+  --pink: #d63384;
+  --blue: #0d6efd;
+  --yellow: #ffc107;
+  --light: #f8f9fa;
+  --dark: #dee2e6;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --red: #dc3545;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto';
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.copy-paste {
+  background-color: rgba(13, 109, 253, 0.7);
+  color: #fff;
+  border-radius: 5px;
+  width: 70vw;
+  height: 50px;
+  padding: 5px;
+  margin: 4dvb 0 40px 0;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-paste:hover {
+  background-color: var(--blue);
+}
+
+#pw-length {
+  width: 70vw;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+input[type='number'] {
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+input[type='number']:focus {
+  color: rgb(13, 109, 253);
+}
+
+input[type='number']::placeholder {
+  color: var(--blue);
+  padding-left: 5px;
+}
+
+.selectChar {
+  margin-top: 10px;
+}
+
+.selectChar,
+.generate-pw {
+  margin-bottom: 30px;
+}
+
+.generate-pw {
+  width: 70vw;
+  height: 40px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 3px;
+}
+
+.toast-message {
+  display: none;
+  background-color: transparent;
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.toast-message.active {
+  display: block;
+}
+
+.copy-paste:hover,
+.toast-message.active:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.notification {
+  background-color: var(--blue);
+  color: var(--light);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 70vw;
+  height: 90px;
+  padding: 10px 0 5px 10px;
+  display: fle;
+  align-items: center;
+}
+
+.notification p {
+  margin: 10px 0;
+}
+
+.copied-alert {
+  display: none;
+  opacity: 0.8;
+  width: 36px;
+  height: 20px;
+  background-color: var(--dark);
+  color: var(--black);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 100;
+  position: relative;
+  bottom: 520px;
+  left: 300px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.copied-alert.active {
+  display: block;
+}
+
+.checkAll {
+  margin-top: 10px;
+  font-size: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--blue);
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
