@@ -108,7 +108,7 @@ function finishGame() {
 
   input_area.disabled = true;
 
-  quote_text.textContent = 'Click on restart to start a new game.';
+  quote_text.textContent = '다시하기를 눌러 게임을 시작하세요.';
 
   restart_btn.style.display = 'block';
 
