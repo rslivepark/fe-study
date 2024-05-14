@@ -8,7 +8,7 @@ const MainPage = () => {
     <div>
       <Banner />
       <Row
-        title='NETFLIX ORIGINALS'
+        title='DISNEY ORIGINALS'
         id='NO'
         fetchURL={requests.fetchNetflixOriginals}
         isLargeRow={true}
